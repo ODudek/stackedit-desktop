@@ -15,3 +15,7 @@ $ npm run package-mac           # Build MacOS package
 $ npm run package-win           # Build Windows package
 $ npm run package-linux         # Build Linux package
 ```
+
+## Screenshot
+
+![Screenshot](./app/assets/images/screenshot/demo.png "Demo")
