@@ -1,14 +1,17 @@
 {
-    "name": "stackedit-electron",
-    "dependencies": {
-        "electron": "^2.0.0-beta.4"
-    },
-    "scripts": {
-        "start": "electron ."
-    },
-    "main": "main.js",
-    "version": "0.0.1",
-    "license": "MIT",
-    "description": "",
-    "author": "aleksanderdudek"
+	"name": "Stackedit",
+	"dependencies": {
+		"electron": "^2.0.0-beta.4"
+	},
+	"scripts": {
+		"start": "electron .",
+		"package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/logo.icns --prune=true --out=release-builds",
+		"package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=Stackedit --version-string.FileDescription=Stackedit --version-string.ProductName=\"Stackedit\"",
+		"package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/512x512.png --prune=true --out=release-builds"
+	},
+	"main": "main.js",
+	"version": "0.0.3",
+	"license": "MIT",
+	"description": "",
+	"author": "aleksanderdudek"
 }

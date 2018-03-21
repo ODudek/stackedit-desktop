@@ -1,0 +1,7 @@
+body {
+	-webkit-app-region: drag;
+}
+
+body > div.app.app--light > div.layout > div > div.layout__panel.flex.flex--column > div.layout__panel.flex.flex--row {
+	-webkit-app-region: no-drag;
+}
